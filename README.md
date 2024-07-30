@@ -70,7 +70,7 @@ http://localhost:3000
 ```
 ## Estrutura do Projeto:
 ```
-my-todo-list/
+App-ToDoList-Equipe1/
 ├── public/
 │   ├── index.html
 │   ├── favicon.ico
@@ -114,13 +114,13 @@ Clique no botão "Fork" no canto superior direito da página do repositório no 
 **2** - Clone o seu Fork:
 Clone o repositório forkado para o seu computador:
 ```
-git clone https://github.com/seu-usuario/nome-do-repositorio-forkado.git
+git clone https://github.com/MarcoskDev/App-ToDoList-Equipe1-forkado.git
 
 ```
 
 **3** - Crie uma Branch para a sua Feature ou Bugfix:
 ```
-git checkout -b minha-nova-feature
+git checkout -b sua-nova-feature
 
 ```
 
@@ -132,7 +132,7 @@ git commit -m "Adicione aqui sobre sua nova feature"
 
 **5** - Push para o seu Fork:
 ```
-git push origin minha-nova-feature
+git push origin sua-nova-feature
 ```
 
 **6** - Crie um Pull Request:
