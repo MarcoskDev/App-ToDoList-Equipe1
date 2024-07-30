@@ -11,14 +11,6 @@ O Inova Maranhão é um programa do Governo do Estado vinculado à Secretaria de
 
 ### O que é o Programa Trilhas do Inova Maranhão?
 Trilhas é um programa de qualificação em tecnologia para pessoas a partir de 16 anos. Com uma jornada de 20 semanas, o programa oferece cursos nas áreas de Programação Front-end, Programação Back-end, Programação de Jogos, Design e Experiência do Usuário, Ciência de Dados e Carreiras. O objetivo é atender demandas locais, nacionais e internacionais, fomentando o empreendedorismo e a empregabilidade, e impactando social e economicamente a vida dos participantes.
-## Funcionalidades
-
-- Temas dark e light
-- Preview em tempo real
-- Modo tela cheia
-- Multiplataforma
-
-
 ## Stack utilizada
 
 **React:** Biblioteca JavaScript para construção de interfaces de usuário.
@@ -43,3 +35,107 @@ Trilhas é um programa de qualificação em tecnologia para pessoas a partir de 
 **Alertas:** Informam sobre ações realizadas, como criação, edição, conclusão e remoção de tarefas, com animações de entrada e saída.
 
 **Persistência de Dados:** As tarefas são salvas no LocalStorage, garantindo que elas permaneçam mesmo após o fechamento do navegador.
+
+## Como Usar e Rodar o Projeto
+### Requisitos
+#### Instale my-project com npm
+
+Antes de começar, você precisará ter o Node.js e o npm instalados na sua máquina. Se ainda não os tem, siga os links para fazer o download e a instalação
+```
+
+```
+
+#### Como Rodar o Projeto:
+Primeiro, clone o repositório do GitHub para o seu computador. Abra o terminal ou o prompt de comando e execute:
+```
+git clone https://github.com/seu-usuario/nome-do-repositorio.git
+
+```
+#### Instale as Dependências:
+Navegue até a pasta do projeto e instale as dependências necessárias executando:
+```
+cd nome-do-repositorio
+npm install
+
+```
+#### Rodando o Projeto:
+Com as dependências instaladas, inicie o servidor de desenvolvimento:
+```
+npm start
+```
+#### Abra no Navegador:
+O comando acima abrirá automaticamente a aplicação no seu navegador padrão. Se isso não acontecer, abra manualmente o navegador e acesse:
+```
+http://localhost:3000
+```
+## Estrutura do Projeto:
+```
+my-todo-list/
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   └── manifest.json
+├── src/
+│   ├── components/
+│   │   ├── MenuBar.tsx
+│   │   ├── Header.tsx
+│   │   ├── TodoForm.tsx
+│   │   ├── TodoList.tsx
+│   │   ├── TodoItem.tsx
+│   ├── App.tsx
+│   ├── index.tsx
+│   ├── styles/
+│   │   ├── App.css
+│   │   ├── MenuBar.css
+│   │   ├── Header.css
+│   │   ├── TodoForm.css
+│   │   ├── TodoList.css
+│   │   ├── TodoItem.css
+│   ├── utils/
+│   │   ├── alerts.ts
+│   │   ├── localStorage.ts
+│   └── react-app-env.d.ts
+├── .gitignore
+├── package.json
+├── tsconfig.json
+└── README.md
+
+```
+## Como Contribuir
+Contribuições são sempre bem-vindas!
+
+Se você quiser contribuir para o projeto, siga estes passos:
+
+**1** - Faça um Fork do Repositório:
+```
+Clique no botão "Fork" no canto superior direito da página do repositório no GitHub.
+```
+
+**2** - Clone o seu Fork:
+Clone o repositório forkado para o seu computador:
+```
+git clone https://github.com/seu-usuario/nome-do-repositorio-forkado.git
+
+```
+
+**3** - Crie uma Branch para a sua Feature ou Bugfix:
+```
+git checkout -b minha-nova-feature
+
+```
+
+**4** - Faça as Alterações Necessárias e Commite:
+```
+git add .
+git commit -m "Adicione aqui sobre sua nova feature"
+```
+
+**5** - Push para o seu Fork:
+```
+git push origin minha-nova-feature
+```
+
+**6** - Crie um Pull Request:
+```
+Vá até a página do repositório original no GitHub e clique no botão "New Pull Request".
+```
