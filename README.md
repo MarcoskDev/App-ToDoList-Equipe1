@@ -48,13 +48,13 @@ Antes de começar, você precisará ter o Node.js e o npm instalados na sua máq
 #### Como Rodar o Projeto:
 Primeiro, clone o repositório do GitHub para o seu computador. Abra o terminal ou o prompt de comando e execute:
 ```
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/MarcoskDev/App-ToDoList-Equipe1.git
 
 ```
 #### Instale as Dependências:
 Navegue até a pasta do projeto e instale as dependências necessárias executando:
 ```
-cd nome-do-repositorio
+cd App-ToDoList-Equipe1
 npm install
 
 ```
