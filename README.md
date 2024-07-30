@@ -42,7 +42,8 @@ Trilhas é um programa de qualificação em tecnologia para pessoas a partir de 
 
 Antes de começar, você precisará ter o Node.js e o npm instalados na sua máquina. Se ainda não os tem, siga os links para fazer o download e a instalação
 ```
-
+https://nodejs.org/pt
+https://www.npmjs.com
 ```
 
 #### Como Rodar o Projeto:
