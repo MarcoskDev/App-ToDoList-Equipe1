@@ -1,4 +1,4 @@
-
+ 
 # App To Do List
 
 Este projeto de To-Do List foi desenvolvido durante o desafio do Programa Trilhas - Inova Maranhão para demonstrar o que aprendemos durante o programa.
