@@ -1,0 +1,12 @@
+header {
+    padding: 3rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+header h1{
+    color: var(--main-color);
+    font-family: var(--font-second);
+    font-size: 3rem;
+    margin-bottom: 0;
+    font-weight: 200;
+}
