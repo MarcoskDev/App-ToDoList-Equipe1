@@ -156,7 +156,7 @@ const App: React.FC = () => {
                />
             )}
          </div>
-         <footer>Criado durante o prgram trias</footer>
+         <footer>Criado durante o programa trilhas</footer>
       </div>
    );
 };
