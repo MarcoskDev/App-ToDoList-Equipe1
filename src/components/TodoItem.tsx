@@ -52,13 +52,13 @@ const TodoItem: React.FC<Props> = ({
           <button type="submit">Save</button>
         </form>
       ) : (
-        <span onClick={() => setEditingId(todo.id)}>
+        <span className="todo-text" onClick={() => setEditingId(todo.id)}>
           {todo.text}
         </span>
       )}
       <div className="icons">
-        <button onClick={() => setEditingId(todo.id)}>✏️</button>
-        <button onClick={() => removeTodo(todo.id)}>🗑️</button>
+        <button className="edit-button" onClick={() => setEditingId(todo.id)}>✏️</button>
+        <button className="edit-button" onClick={() => removeTodo(todo.id)}>🗑️</button>
       </div>
     </li>
   );

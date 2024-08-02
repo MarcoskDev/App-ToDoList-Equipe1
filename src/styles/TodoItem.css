@@ -1,0 +1,71 @@
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    width: 33rem;
+    border-radius: 15px;
+    border-bottom: 1px solid #ccc;
+    background-color: var(--main-color);
+    margin-bottom: 0.5rem;
+    margin-left: 24.5rem;
+    font-family: var(--font-main);
+}
+.todo-item.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+.todo-item input[type="checkbox"] {
+    margin-right: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    appearance: none;
+    border: 2px solid var(--third-color);
+    border-radius: 15px;
+    cursor: pointer;
+}
+.todo-item input[type="checkbox"]:checked {
+    background-color: var(--third-color);
+}
+.todo-item input[type="checkbox"]:hover {
+    border-color: #999;
+}
+.todo-item span {
+    flex: 1;
+}
+.icons {
+    display: flex;
+    gap: 0.5rem;
+    margin-left: 10px;
+}
+.icons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.icons button:first-child {
+    color: var(--second-color);
+}
+.icons button:last-child {
+    color: red;
+}
+.todo-item form {
+    display: flex;
+    gap: 0.5rem;
+    flex: 1;
+}
+.todo-item form input[type="text"] {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+.todo-item form button[type="submit"] {
+    background-color: green;
+    color: var(--main-color);
+    font-family: var(--font-main);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
