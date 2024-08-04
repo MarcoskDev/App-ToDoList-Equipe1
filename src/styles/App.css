@@ -18,7 +18,77 @@
 }
 
 body {
+   background-color: #051956;
+}
+
+.sub__menu {
+   display: flex;
+   justify-content: center;
+   gap: 9rem;
+   padding-top: 16rem;
+   position: fixed;
+   width: 100%;
    background-color: var(--third-color);
+}
+
+.sub__menu > button {
+   padding: 8px 10px;
+   border: none;
+   border-radius: 10px;
+   color: #fff;
+   font-family: var(--font-main);
+   font-weight: 500;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+button > span {
+   color: #fff;
+   background-color: var(--second-color);
+   border-radius: 5px;
+   padding: 0 5px;
+}
+
+hr {
+   width: 43%;
+   margin: 0 auto;
+   border: none;
+   border: 1px solid #3451a167;
+   margin-bottom: 1.5rem;
+   border-radius: 50px;
+}
+
+.alert {
+   background-color: var(--third-color);
+   color: #fff;
+   font-family: var(--font-main);
+   padding: 10px;
+   margin: 10px 0;
+   border-radius: 5px;
+   text-align: center;
+   position: fixed;
+   right: -300px;
+   top: 20px;
+   transition: right 0.5s ease-in-out, opacity 0.5s ease-in-out;
+   z-index: 999999999999999999999999999999999;
+   opacity: 0;
+}
+
+.alert.show {
+   animation: slideIn 0.5s forwards;
+}
+
+.alert.hide {
+   animation: slideOut 0.5s forwards;
+}
+
+.close-alert {
+   background: none;
+   border: none;
+   color: white;
+   font-size: 20px;
+   margin-left: 10px;
+   cursor: pointer;
 }
 
 @keyframes slideIn {
@@ -41,48 +111,4 @@ body {
       right: -300px;
       opacity: 0;
    }
-}
-
-.alert {
-   background-color: #415a77;
-   color: white;
-   padding: 10px;
-   margin: 10px 0;
-   border-radius: 5px;
-   text-align: center;
-   position: fixed;
-   right: -300px;
-   top: 20px;
-   transition: right 0.5s ease-in-out, opacity 0.5s ease-in-out;
-   z-index: 1000;
-   opacity: 0;
-}
-
-.alert.show {
-   animation: slideIn 0.5s forwards;
-}
-
-.alert.hide {
-   animation: slideOut 0.5s forwards;
-}
-
-.close-alert {
-   background: none;
-   border: none;
-   color: white;
-   font-size: 20px;
-   margin-left: 10px;
-   cursor: pointer;
-}
-
-footer {
-   background-color: var(--second-color);
-   color: var(--main-color);
-   font-family: var(--font-main);
-   text-align: center;
-   padding: 2rem 0;
-   position: fixed;
-   bottom: 0;
-   left: 0;
-   width: 100%;
 }

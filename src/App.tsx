@@ -118,20 +118,21 @@ const App: React.FC = () => {
                   </button>
                </div>
             )}
-            <div className="tabs">
+            <div className="sub__menu">
                <button
                   onClick={() => setShowCompleted(false)}
                   className={!showCompleted ? "active" : ""}
                >
-                  Tarefas Criadas ({todos.length})
+                  Tarefas Criadas <span>{todos.length}</span>
                </button>
                <button
                   onClick={() => setShowCompleted(true)}
                   className={showCompleted ? "active" : ""}
                >
-                  Concluídas ({completedTodos.length})
+                  Concluídas <span>{completedTodos.length}</span>
                </button>
             </div>
+            <hr />
             {!showCompleted ? (
                <TodoList
                   todos={todos}
@@ -156,7 +157,6 @@ const App: React.FC = () => {
                />
             )}
          </div>
-         <footer>Criado durante o programa trilhas</footer>
       </div>
    );
 };
