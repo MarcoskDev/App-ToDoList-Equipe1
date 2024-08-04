@@ -1,5 +1,6 @@
 {
    "name": "todo-list-equipe1",
+   "homepage": "https://marcoskdev.github.io/App-ToDoList-Equipe1",
    "version": "0.1.0",
    "private": true,
    "dependencies": {
