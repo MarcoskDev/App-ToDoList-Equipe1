@@ -1,46 +1,142 @@
-# Getting Started with Create React App
+ 
+# App To Do List
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto de To-Do List foi desenvolvido durante o desafio do Programa Trilhas - Inova Maranhão para demonstrar o que aprendemos durante o programa.
 
-## Available Scripts
+### Sobre o Projeto
+A aplicação web de gerenciamento de tarefas (To-Do List) foi construída com React, TypeScript e CSS. Ela permite que você adicione, edite, conclua e remova tarefas facilmente. Quando uma tarefa é concluída, ela é movida para uma seção específica e pode ser retornada à lista principal se necessário. O projeto também inclui alertas animados que informam sobre a criação, edição, conclusão e remoção de tarefas, garantindo uma experiência do usuário agradável.
 
-In the project directory, you can run:
+### Sobre o Inova Maranhão
+O Inova Maranhão é um programa do Governo do Estado vinculado à Secretaria de Estado da Ciência, Tecnologia e Inovação (SECTI). Seu objetivo é estimular a inovação, o empreendedorismo, o desenvolvimento tecnológico, sustentável e social entre os maranhenses. Criado em 2015, começou como um programa de incubação de startups e hoje possui oito eixos estratégicos.
 
-### `npm start`
+### O que é o Programa Trilhas do Inova Maranhão?
+Trilhas é um programa de qualificação em tecnologia para pessoas a partir de 16 anos. Com uma jornada de 20 semanas, o programa oferece cursos nas áreas de Programação Front-end, Programação Back-end, Programação de Jogos, Design e Experiência do Usuário, Ciência de Dados e Carreiras. O objetivo é atender demandas locais, nacionais e internacionais, fomentando o empreendedorismo e a empregabilidade, e impactando social e economicamente a vida dos participantes.
+## Stack utilizada
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**React:** Biblioteca JavaScript para construção de interfaces de usuário.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**TypeScript:** Superset de JavaScript que adiciona tipagem estática opcional à linguagem.
 
-### `npm test`
+**CSS:** Folhas de estilo em cascata para estilização da aplicação.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**LocalStorage:** Tecnologia de armazenamento web para persistir dados no navegador do usuário.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Funcionalidades do Projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Adicionar Tarefa:** Permite adicionar novas tarefas à lista.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Editar Tarefa:** Permite editar o texto das tarefas.
 
-### `npm run eject`
+**Concluir Tarefa:** Permite marcar tarefas como concluídas, movendo-as para a seção de tarefas concluídas.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Remover Tarefa:** Permite remover tarefas da lista.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Alertas:** Informam sobre ações realizadas, como criação, edição, conclusão e remoção de tarefas, com animações de entrada e saída.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Persistência de Dados:** As tarefas são salvas no LocalStorage, garantindo que elas permaneçam mesmo após o fechamento do navegador.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Como Usar e Rodar o Projeto
+### Requisitos
+#### Instale my-project com npm
 
-## Learn More
+Antes de começar, você precisará ter o Node.js e o npm instalados na sua máquina. Se ainda não os tem, siga os links para fazer o download e a instalação
+```
+https://nodejs.org/pt
+https://www.npmjs.com
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Como Rodar o Projeto:
+Primeiro, clone o repositório do GitHub para o seu computador. Abra o terminal ou o prompt de comando e execute:
+```
+git clone https://github.com/MarcoskDev/App-ToDoList-Equipe1.git
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+#### Instale as Dependências:
+Navegue até a pasta do projeto e instale as dependências necessárias executando:
+```
+cd App-ToDoList-Equipe1
+npm install
+
+```
+#### Rodando o Projeto:
+Com as dependências instaladas, inicie o servidor de desenvolvimento:
+```
+npm start
+```
+#### Abra no Navegador:
+O comando acima abrirá automaticamente a aplicação no seu navegador padrão. Se isso não acontecer, abra manualmente o navegador e acesse:
+```
+http://localhost:3000
+```
+## Estrutura do Projeto:
+```
+App-ToDoList-Equipe1/
+├── public/
+│   ├── index.html
+│   ├── favicon.ico
+│   └── manifest.json
+├── src/
+│   ├── components/
+│   │   ├── MenuBar.tsx
+│   │   ├── Header.tsx
+│   │   ├── TodoForm.tsx
+│   │   ├── TodoList.tsx
+│   │   ├── TodoItem.tsx
+│   ├── App.tsx
+│   ├── index.tsx
+│   ├── styles/
+│   │   ├── App.css
+│   │   ├── MenuBar.css
+│   │   ├── Header.css
+│   │   ├── TodoForm.css
+│   │   ├── TodoList.css
+│   │   ├── TodoItem.css
+│   ├── utils/
+│   │   ├── alerts.ts
+│   │   ├── localStorage.ts
+│   └── react-app-env.d.ts
+├── .gitignore
+├── package.json
+├── tsconfig.json
+└── README.md
+
+```
+## Como Contribuir
+Contribuições são sempre bem-vindas!
+
+Se você quiser contribuir para o projeto, siga estes passos:
+
+**1** - Faça um Fork do Repositório:
+```
+Clique no botão "Fork" no canto superior direito da página do repositório no GitHub.
+```
+
+**2** - Clone o seu Fork:
+Clone o repositório forkado para o seu computador:
+```
+git clone https://github.com/MarcoskDev/App-ToDoList-Equipe1-forkado.git
+
+```
+
+**3** - Crie uma Branch para a sua Feature ou Bugfix:
+```
+git checkout -b sua-nova-feature
+
+```
+
+**4** - Faça as Alterações Necessárias e Commite:
+```
+git add .
+git commit -m "Adicione aqui sobre sua nova feature"
+```
+
+**5** - Push para o seu Fork:
+```
+git push origin sua-nova-feature
+```
+
+**6** - Crie um Pull Request:
+```
+Vá até a página do repositório original no GitHub e clique no botão "New Pull Request".
+```
