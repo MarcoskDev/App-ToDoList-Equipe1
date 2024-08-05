@@ -1,11 +1,11 @@
-header h1 {
+header {
+   width: 100%;
    color: var(--main-color);
    font-family: var(--font-second);
-   font-size: 2em;
+   font-size: 0.8em;
    font-weight: 200;
-   padding: 7rem 0 0 0;
    text-align: center;
-   width: 100%;
+   padding: 8rem 0 0 0;
    position: fixed;
    z-index: 9999999;
 }

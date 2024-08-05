@@ -4,7 +4,7 @@ import "../styles/Header.css";
 const Header: React.FC = () => {
    return (
       <header>
-         <h1>To-Do List</h1>
+         <h1>TaskList-MA</h1>
       </header>
    );
 };
